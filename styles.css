@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+header {
+  background: #4f81bd;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.timeline {
+  position: relative;
+  display: flex;
+  height: 80px;
+  margin: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.segment {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+.morning { background: #6fa8dc; }
+.afternoon { background: #ffe599; color:#333; }
+.evening { background: #f6b26b; }
+.night { background: #6d78ad; }
+.now-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: red;
+}
+.task-container {
+  margin: 1rem;
+}
+.task-icon {
+  position: absolute;
+  top: -20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.manage-panel {
+  margin: 1rem;
+}
+.hidden {
+  display: none;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
