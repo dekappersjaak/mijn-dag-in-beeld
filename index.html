@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Dag in Beeld</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mijn Dag in Beeld</h1>
+  </header>
+  <main>
+    <div id="timeline" class="timeline">
+      <div class="segment morning">Ochtend</div>
+      <div class="segment afternoon">Middag</div>
+      <div class="segment evening">Avond</div>
+      <div class="segment night">Nacht</div>
+      <div id="now-marker" class="now-marker"></div>
+    </div>
+    <div id="taskContainer" class="task-container"></div>
+    <button id="manageBtn">Beheer aan</button>
+    <div id="managePanel" class="manage-panel hidden">
+      <label>
+        Titel:
+        <input type="text" id="taskTitle">
+      </label>
+      <label>
+        Emoji:
+        <input type="text" id="taskEmoji">
+      </label>
+      <label>
+        Tijdstip (uur 0-23):
+        <input type="number" id="taskTime" min="0" max="23">
+      </label>
+      <button id="addTaskBtn">Voeg taak toe</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
